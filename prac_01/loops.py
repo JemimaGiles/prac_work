@@ -13,8 +13,9 @@ print()
 count = 0
 
 stars = int(input("enter a number: "))
-# for i in range(stars):
-#     print('*', end=' ')
+for i in range(stars):
+    print('*', end=' ')
 
-for i in range(1, stars + 1):
-    print('*'*i)
+# for i in range(1, stars + 1):
+#     print('*'*i)
+#

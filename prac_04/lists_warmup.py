@@ -14,13 +14,15 @@ numbers = [3, 1, 4, 1, 5, 9, 2]
 
 # make first number 10
 # numbers.insert(0, 10)
+# print(numbers)
 
 # make last number 1
 # numbers.insert(7, 1)
+# print(numbers)
 
 # starting at second number print all numbers
 # print(numbers[2:])
 
 # check if 9 is in list
-#print(9 in numbers)
+# print(9 in numbers)
 
