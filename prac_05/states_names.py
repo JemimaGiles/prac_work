@@ -16,6 +16,7 @@ while state != "":
         print("Invalid short state")
     state = input("Enter short state: ").upper()
 
+
 # for state(key), names(value) in dictionary.item
 for state, names in STATE_NAMES.items():
-    print(state, 'is', names)
+    print("{:{}} is {}".format(state, 3, names))
