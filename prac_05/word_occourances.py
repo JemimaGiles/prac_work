@@ -9,7 +9,7 @@ for word in words:
 words = list(word_counter.keys())
 words.sort()
 
-max_length = max((len(words) for word in words))
+max_length = max((len(word) for word in words))
 for word in words:
     print("{:{}} : {}".format(word, max_length, word_counter[word]))
 
