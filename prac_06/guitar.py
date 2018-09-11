@@ -15,5 +15,5 @@ class Guitar:
         return self.guitar_age() >= VINTAGE
 
     def __str__(self):
-        # return ("{} ({}) : ${:,.2f}".format(self.name, self.year, self.cost))
-        return ("Guitar {}: {:>20} ({}), worth ${:10,.2f}{}".format(i + 1, self.name, self.year, self.cost, VINTAGE))
+        # return "{} ({}) : ${:,.2f}".format(self.name, self.year, self.cost)
+        return "Guitar {}: {:>20} ({}), worth ${:10,.2f}{}".format(i + 1, self.name, self.year, self.cost, VINTAGE)
