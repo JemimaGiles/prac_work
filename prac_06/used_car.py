@@ -15,10 +15,6 @@ def main():
     my_limo.name = "Fancy Limo"
     print(my_limo)
 
-
-
-
-
     # print("fuel =", my_car.fuel)
     # print("odo =", my_car.odometer)
     # print(my_car)
@@ -28,4 +24,3 @@ def main():
 
 
 main()
-
