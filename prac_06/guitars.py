@@ -1,18 +1,20 @@
-CURRENT_YEAR = 2018
-VINTAGE = 50
+from prac_06.guitar import Guitar
 
 
-class Guitars:
-    def __init__(self, name="", year=0, cost=0):
-        self.name = name
-        self.year = year
-        self.cost = cost
+def main():
+    guitars = []
 
-    def guitar_age(self):
-        return CURRENT_YEAR - self.year
+    print("My Guitars!")
+    # name = input("Name: ")
+    # year = int(input("Year: "))
+    # cost = int(input("Cost: "))
+    # guitar = Guitar(name, year, cost)
+    # guitars.append(guitar)
 
-    def is_vintage(self):
-        return self.guitar_age() >= VINTAGE
+    guitars.append(Guitar("Gibson L-5 CES", 1922, 16035.40))
+    guitars.append(Guitar("Line 6 JTV-59", 2010, 1512.9))
 
-    def __str__(self):
-        return ("{} ({}) : ${:,.2f}".format(self.name, self.year, self.cost))
+    print(guitars)
+
+
+main()

@@ -1,4 +1,4 @@
-from prac_06.guitars import Guitars
+from prac_06.guitar import Guitar
 
 CURRENT_YEAR = 2018
 
@@ -8,10 +8,10 @@ def main():
     year = 1922
     cost = 16035.40
 
-    my_guitar = Guitars(name, year, cost)
-    your_guitar = Guitars("a name", 2012, 1234)
+    my_guitar = Guitar(name, year, cost)
+    your_guitar = Guitar("a name", 2012, 1234)
 
-    print(your_guitar.is_vintage())
+    print(my_guitar)
 
 
 main()
