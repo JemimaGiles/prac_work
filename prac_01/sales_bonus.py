@@ -16,3 +16,4 @@ while sales > 0:
     sales = float(input("PLease enter your sales: $"))
 
 # remove the repeated lines
+

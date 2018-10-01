@@ -11,13 +11,6 @@ class ConvertDistancesApp(App):
         self.root = Builder.load_file('converting_distances.kv')
         return self.root
 
-    def error_check(self):
-        try:
-            value = float(self.root.ids.input_number.text)
-            return value
-        except ValueError:
-            return 0
-
     def handle_conversion(self):
         value = self.error_check()
         result = value * MILES_TO_KM
@@ -27,6 +20,13 @@ class ConvertDistancesApp(App):
         value = self.error_check() + change
         self.root.ids.input_number.text = str(value)
         self.handle_conversion()
+
+    def error_check(self):
+        try:
+            value = float(self.root.ids.input_number.text)
+            return value
+        except ValueError:
+            return 0
 
 
 ConvertDistancesApp().run()
