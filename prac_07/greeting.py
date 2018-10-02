@@ -3,10 +3,11 @@ from kivy.lang import Builder
 from kivy.core.window import Window
 
 
-class BoxLayoutDemo(App):
+class GreetingDemo(App):
     def build(self):
         self.title = "Box Layout Demo"
         self.root = Builder.load_file('greeting.kv')
+        Window.size = (500, 200)
         return self.root
 
     def handle_greet(self):
@@ -18,4 +19,4 @@ class BoxLayoutDemo(App):
         self.root.ids.input_name.text = ''
 
 
-BoxLayoutDemo().run()
+GreetingDemo().run()

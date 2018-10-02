@@ -3,6 +3,7 @@ BoxLayout:
     BoxLayout:
         orientation: 'horizontal'
         Button:
+            size_hint_x: 0.2
             text: 'Clear'
             on_release: app.handle_clear()
         TextInput:
@@ -11,6 +12,7 @@ BoxLayout:
     BoxLayout:
         orientation: 'horizontal'
         Button:
+            size_hint_x: 0.2
             text: 'Greet'
             on_press: app.handle_greet()
         Label:
