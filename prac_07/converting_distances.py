@@ -1,32 +1,31 @@
 from kivy.app import App
 from kivy.lang import Builder
 
-MILES_TO_KM = 1.60934
+MILES_to_KM = 1.60934
 
 
-class ConvertDistancesApp(App):
-
+class ConversionApp(App):
     def build(self):
-        self.title = 'Convert miles to kilometers'
+        self.title = 'Converting App'
         self.root = Builder.load_file('converting_distances.kv')
         return self.root
 
-    def handle_conversion(self):
-        value = self.error_check()
-        result = value * MILES_TO_KM
-        self.root.ids.output_lable.text = str(result)
+    def handle_calculations(self):
+        value = self.error_check_input()
+        result = value * MILES_to_KM
+        self.root.ids.output_label.text = str(result)
 
-    def handle_increment(self, change):
-        value = self.error_check() + change
-        self.root.ids.input_number.text = str(value)
-        self.handle_conversion()
-
-    def error_check(self):
+    def error_check_input(self):
         try:
-            value = float(self.root.ids.input_number.text)
+            value = float(self.root.ids.input_miles.text)
             return value
         except ValueError:
             return 0
 
+    def handle_increments(self, change):
+        value = self.error_check_input() + change
+        self.root.ids.input_miles.text = str(value)
+        self.handle_calculations()
 
-ConvertDistancesApp().run()
+
+ConversionApp().run()
