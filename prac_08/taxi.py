@@ -9,6 +9,7 @@ class Taxi(Car):
     """Specialised version of a Car that includes fare costs."""
 
     price_per_km = 1.23
+
     # class variable that will affect all taxis
 
     def __init__(self, name, fuel):
