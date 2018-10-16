@@ -4,7 +4,7 @@ from prac_08.taxi import Taxi
 
 
 def main():
-    my_taxi = Taxi('', '', 1.23)
+    my_taxi = Taxi('', '')
     my_taxi.name = 'Prius 1'
     my_taxi.fuel = 100
     my_taxi.drive(40)
