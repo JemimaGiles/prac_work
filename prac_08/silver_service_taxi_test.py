@@ -11,8 +11,11 @@ def main():
     honda.drive(18)
 
     print(aston_martin)
+    print("Fare: ${}".format(aston_martin.get_fare()))
     print(porsche)
+    print("Fare: ${}".format(porsche.get_fare()))
     print(honda)
+    print("Fare: ${}".format(honda.get_fare()))
 
 
 main()
